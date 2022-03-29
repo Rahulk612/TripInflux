@@ -135,7 +135,7 @@ function Extra(){
     for(let i  = 0; i<100; i++){
         Group.AddExpenses(
           Names[Math.floor(Math.random() * Names.length)],(
-            Math.floor(Math.random() * (100 - 1 + 1)) + 1
+            Math.floor(Math.random() * (1000 - 1 + 1)) + 1
           )
         );
     }
