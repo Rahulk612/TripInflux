@@ -119,3 +119,27 @@ function Main(){
 
     console.log(Group);
 }
+Extra()
+
+function Extra(){
+    const Group = new Trip();
+
+    Group.CreateGroup("Rahul Group");
+    Group.AddMembers("Rahul");
+    Group.AddMembers("Vishal");
+    Group.AddMembers("Manish");
+
+    let Names = ["Rahul","Vishal","Manish"]
+
+
+    for(let i  = 0; i<100; i++){
+        Group.AddExpenses(
+          Names[Math.floor(Math.random() * Names.length)],(
+            Math.floor(Math.random() * (100 - 1 + 1)) + 1
+          )
+        );
+    }
+
+    Group.SplitExpenses();
+    console.log(Group)
+}
